@@ -5,18 +5,18 @@ env = Environment(10, 10, "Universe", True)
 sleepTime = 0.5
 
 #This is a good starting point, because it rarely dies out
-env.setState(5, 5, True)
-env.setState(6, 5, True)
-env.setState(4, 4, True)
-env.setState(5, 4, True)
-env.setState(5, 3, True)
+env.set_state(5, 5, True)
+env.set_state(6, 5, True)
+env.set_state(4, 4, True)
+env.set_state(5, 4, True)
+env.set_state(5, 3, True)
 
 #Make this state environment's initial state
-env.updateInitial()
+env.update_initial()
 
 #Run the simulation
-while(True):
+while True:
     print("NEXT")
-    env.printMap()
+    env.print_map()
     env.step()
     time.sleep(sleepTime)
